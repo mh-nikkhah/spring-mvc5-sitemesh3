@@ -1,0 +1,104 @@
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mh</groupId>
+    <artifactId>spring-mvc5-sitemesh3</artifactId>
+    <packaging>war</packaging>
+    <version>1.0.0</version>
+    <name>spring-mvc5-sitemesh3</name>
+
+    <properties>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>5.1.8.RELEASE</spring.version>
+        <jstl.version>1.2</jstl.version>
+        <javax.servlet.version>4.0.1</javax.servlet.version>
+    </properties>
+    
+    <dependencies>
+      
+        <!-- SPRING -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency> 
+        
+        
+        <!-- SPRING BOOT -->     
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>1.2.3.RELEASE</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>1.3.5.RELEASE</version>
+            <scope>provided</scope>  
+        </dependency>
+        
+        
+        
+        <!-- JAVAX -->  
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        
+        <!-- COMMONS -->   
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
+        
+      
+        
+        <!-- JSTL -->
+        <dependency>  
+            <groupId>jstl</groupId>  
+            <artifactId>jstl</artifactId>  
+            <version>${jstl.version}</version>  
+        </dependency> 
+        
+        <!-- SITEMESH -->
+        <dependency>
+            <groupId>org.sitemesh</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>3.0.0</version>
+            <type>jar</type>
+        </dependency>
+
+        
+    </dependencies>
+    
+    
+    
+</project>
